@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Fireplace";
+  src: url("fonts/Fireplace.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-size: 12px;
+}
+
+@media (min-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Fireplace", serif;
+  color: #333;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Variables */
+#root {
+  background: #f3f3f3;
+
+  --primary: #e73034;
+  --primary-off: #fd494d;
+  --secondary: #5e8c8c;
+  --secondary-off: #85b4ad;
+  --tertiary: #3a7c68;
+  --tertiary-off: #5a9888;
+  /* --secondary: #0e8045; */
+  --grey: #333;
+  --light-grey: #777;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+  outline: 0;
+}
+
+a {
+  color: var(--primary);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
