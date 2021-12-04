@@ -2,11 +2,13 @@
 
 This project is a web-based, Christmas Advent calendar that gives the recipient a different `gif` for each of the 24 lead-up days to Christmas. The calendar was made with [React](https://github.com/facebook/create-react-app).
 
+![image](https://user-images.githubusercontent.com/49534136/144716761-2bb2ebaf-9a5f-407d-9874-d0cd2422e165.png)
+
 ## Usage
 
-The current gifs that have been selected are very much personal jokes based on the media consumed by my partner and I in 2020, however there is no reason that these cannot be swapped out for other gifs/images! If you DO want to do this, take a look at the [lessons learnt](https://github.com/Johoseph/advent-gifmas#lessons-learnt) section of this README that goes into more details about the good and bad of this project.
+The current gifs that have been selected are very much personal jokes based on the media consumed by my partner and I in 2020, however there is no reason that these cannot be swapped out for other gifs/images! If you DO want to do this, take a look at the [lessons learnt](https://github.com/Johoseph/advent-gifmas#lessons-learnt-) section of this README that goes into more details about the good and bad of this project.
 
-After installing (`yarn install`) and running (`yarn dev`) this repo, the following will need to be updated to 're-personalise' the calendar:
+After installing (`yarn install`) and running (`yarn start`) this repo, the following will need to be updated to 're-personalise' the calendar:
 
 1. [`Welcome.jsx`](https://github.com/Johoseph/advent-gifmas/blob/master/src/components/Welcome.jsx) - this component is an overlay that shows when a user enters the web application at the start of a new session. Here you can update the name of the recipient and the year the calendar will be used. You will also need to replace images `Home1.png` ➡ `Home6.png` in the [`assets`](https://github.com/Johoseph/advent-gifmas/tree/master/src/assets) directory - two of these images are randomly selected and shown on the overlay each time the component renders.
 2. [`index.html`](https://github.com/Johoseph/advent-gifmas/blob/master/public/index.html) - similar to above, you will need to update the references to the recipient/year to re-personalise the calendar.
@@ -29,7 +31,7 @@ And voila! You now have a personalised Advent calendar that can be shared with a
 
 For context, this README has been written a full year after this project was completed. I have just finished developing the successor to this Advent Calendar ([Cosmic Flick Seekers](https://github.com/Johoseph/cosmic-flick-seekers); this is an even COOLER project, you should check it out 😎) and thought that it would be a good exercise to revisit this one, reflecting on what was done well (the good) and what could be improved upon (the bad).
 
-### The Good 🐱‍🏍
+### The Good 🦸‍♂️
 
 - **React Spring usage** - This was my first time using the [`react-spring`](https://react-spring.io/) library and I think it is really useful. The flexibility provided by the `interpolate` method was fundamental in animating the opening/closing of each calendar door - nesting interpolates to further animate specific CSS Transform properties was even better. Check out how I used this in [`AdventCard.jsx`](https://github.com/Johoseph/advent-gifmas/blob/master/src/components/AdventCard.jsx#L108) for more insight.
 
